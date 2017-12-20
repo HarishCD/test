@@ -1,5 +1,8 @@
 import json
 
-with open("file.txt"):
-    json_data = json.loads()
-    sdat = json.dumps(json_data)
+with open("file.txt")as json_data:
+    jdata = json.load(json_data)
+    sdata = json.dumps(jdata)
+
+print sdata
+
